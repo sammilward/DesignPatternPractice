@@ -6,8 +6,6 @@ namespace Design_Pattern_Code.WeatherForecast___Observer_Pattern
 {
     public class ForcastDisplay : IObserver, IDisplay
     {
-        private float temperature;
-        private float humidity;
         private float pressure;
         private ISubject weatherData;
 

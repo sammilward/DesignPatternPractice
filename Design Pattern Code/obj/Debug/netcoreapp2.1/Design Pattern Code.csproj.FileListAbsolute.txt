@@ -9,3 +9,14 @@ C:\Users\Sam Milward\source\repos\Design Pattern Code\Design Pattern Code\obj\De
 C:\Users\Sam Milward\source\repos\Design Pattern Code\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.AssemblyInfo.cs
 C:\Users\Sam Milward\source\repos\Design Pattern Code\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.dll
 C:\Users\Sam Milward\source\repos\Design Pattern Code\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.pdb
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\bin\Debug\netcoreapp2.1\Design Pattern Code.deps.json
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\bin\Debug\netcoreapp2.1\Design Pattern Code.runtimeconfig.json
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\bin\Debug\netcoreapp2.1\Design Pattern Code.runtimeconfig.dev.json
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\bin\Debug\netcoreapp2.1\Design Pattern Code.dll
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\bin\Debug\netcoreapp2.1\Design Pattern Code.pdb
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.csprojAssemblyReference.cache
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.csproj.CoreCompileInputs.cache
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.AssemblyInfoInputs.cache
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.AssemblyInfo.cs
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.dll
+C:\Users\smilward\Documents\Repositories\DesignPatternPractice\Design Pattern Code\obj\Debug\netcoreapp2.1\Design Pattern Code.pdb

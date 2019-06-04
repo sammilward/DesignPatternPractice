@@ -5,12 +5,13 @@ using Design_Pattern_Code.Starbuzz_Coffe___Decorator_Pattern;
 using Design_Pattern_Code.Starbuzz_Coffe___Decorator_Pattern.Beverages;
 using Design_Pattern_Code.Starbuzz_Coffe___Decorator_Pattern.Condiments;
 using Design_Pattern_Code.WeatherForecast___Observer_Pattern;
+using Design_Pattern_Code.Chocolate_Factory___Singleton;
 
 namespace Design_Pattern_Code
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //DuckExample Code - Stratergy Pattern
             //Duck modelDuck = new ModelDuck();
@@ -38,17 +39,20 @@ namespace Design_Pattern_Code
             //Console.WriteLine(bev3.GetDescription() + " £" + bev3.Cost());
 
             //Pizza - Factory
-            PizzaStore nyPizzaStore = new NYPizzaStore();
-            PizzaStore chPizzaStore = new ChicagoPizzaStore();
+            //PizzaStore nyPizzaStore = new NYPizzaStore();
+            //PizzaStore chPizzaStore = new ChicagoPizzaStore();
 
-            var nypizza = nyPizzaStore.OrderPizza("cheese");
-            Console.WriteLine("Pizza ordered: " + nypizza.GetName());
+            //var nypizza = nyPizzaStore.OrderPizza("cheese");
+            //Console.WriteLine("Pizza ordered: " + nypizza.GetName());
 
-            var nypizzaVeg = nyPizzaStore.OrderPizza("veggie");
-            Console.WriteLine("Pizza ordered: " + nypizzaVeg.GetName());
+            //var nypizzaVeg = nyPizzaStore.OrderPizza("veggie");
+            //Console.WriteLine("Pizza ordered: " + nypizzaVeg.GetName());
 
-            var chpizza = chPizzaStore.OrderPizza("cheese");
-            Console.WriteLine("Pizza ordered: " + chpizza.GetName()); 
+            //var chpizza = chPizzaStore.OrderPizza("cheese");
+            //Console.WriteLine("Pizza ordered: " + chpizza.GetName()); 
+
+            //Chocolate Factory - Singleton
+            
         }
     }
 }
