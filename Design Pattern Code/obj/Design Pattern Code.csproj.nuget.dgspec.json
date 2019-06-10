@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\smilward\\Documents\\Repositories\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj": {}
+    "C:\\Users\\Sam Milward\\Documents\\Repos\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj": {}
   },
   "projects": {
-    "C:\\Users\\smilward\\Documents\\Repositories\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj": {
+    "C:\\Users\\Sam Milward\\Documents\\Repos\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\smilward\\Documents\\Repositories\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj",
+        "projectUniqueName": "C:\\Users\\Sam Milward\\Documents\\Repos\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj",
         "projectName": "Design Pattern Code",
-        "projectPath": "C:\\Users\\smilward\\Documents\\Repositories\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj",
-        "packagesPath": "C:\\Users\\smilward\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\smilward\\Documents\\Repositories\\DesignPatternPractice\\Design Pattern Code\\obj\\",
+        "projectPath": "C:\\Users\\Sam Milward\\Documents\\Repos\\DesignPatternPractice\\Design Pattern Code\\Design Pattern Code.csproj",
+        "packagesPath": "C:\\Users\\Sam Milward\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sam Milward\\Documents\\Repos\\DesignPatternPractice\\Design Pattern Code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\smilward\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sam Milward\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,7 +27,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nugetuk/api/v2/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
