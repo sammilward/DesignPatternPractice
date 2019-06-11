@@ -47,6 +47,7 @@ namespace Design_Pattern_Code.Remote_Control___Command_Pattern
 
         public void Undo()
         {
+            Console.WriteLine("Undo Pressed");
             previousCommand.Undo();
         }
 

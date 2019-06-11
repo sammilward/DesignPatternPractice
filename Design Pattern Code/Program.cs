@@ -58,30 +58,31 @@ namespace Design_Pattern_Code
             //ChocolateBoiler.GetInstance().Boil();
             //ChocolateBoiler.GetInstance().Drain(); 
 
-            //Remote Control - Command Pattern
-            RemoteControl remote = new RemoteControl();
+            ////Remote Control - Command Pattern
+            //RemoteControl remote = new RemoteControl();
 
-            Light light = new Light("Kitchen");
-            Stereo stereo = new Stereo();
+            //Light light = new Light("Kitchen");
+            //Stereo stereo = new Stereo();
 
-            remote.SetCommand(0, new LightOnCommand(light), new LightOffCommand(light));
-            remote.SetCommand(1, new StereoOnCommand(stereo), new StereoOffCommand(stereo));
-            remote.onButtonPushed(0);
-            remote.onButtonPushed(0);
-            remote.Undo();
-            remote.Undo();
-            remote.Undo();
-            remote.Undo();
+            //ICommand[] onCommands = new ICommand[2];
+            //onCommands.SetValue(new LightOnCommand(light), 0);
+            //onCommands.SetValue(new StereoOnCommand(stereo), 1);
+            //MacroCommand lightandradioOn = new MacroCommand(onCommands);
 
-            remote.offButtonPushed(0);
+            //ICommand[] offCommands = new ICommand[2];
+            //offCommands.SetValue(new LightOffCommand(light), 0);
+            //offCommands.SetValue(new StereoOffCommand(stereo), 1);
+            //MacroCommand lightandradioOff = new MacroCommand(offCommands);
 
-            remote.onButtonPushed(1);
-            remote.onButtonPushed(1);
-            remote.Undo();
-            remote.offButtonPushed(1);
+            //remote.SetCommand(0, new LightOnCommand(light), new LightOffCommand(light));
+            //remote.SetCommand(1, new StereoOnCommand(stereo), new StereoOffCommand(stereo));
+            //remote.SetCommand(2, lightandradioOn, lightandradioOff);
+            //remote.SetCommand(3, lightandradioOn, lightandradioOff);
 
-            Console.WriteLine(remote.ToString());
-
+            //remote.onButtonPushed(2);
+            //remote.offButtonPushed(2);
+            //remote.Undo();
+            //Console.WriteLine(remote.ToString());
         }
     }
 }
