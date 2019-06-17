@@ -9,6 +9,7 @@ using Design_Pattern_Code.Chocolate_Factory___Singleton;
 using Design_Pattern_Code.Remote_Control___Command_Pattern;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Commands;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Devices;
+using Design_Pattern_Code.Ducks_2___Adapter_Pattern;
 
 namespace Design_Pattern_Code
 {
@@ -59,29 +60,28 @@ namespace Design_Pattern_Code
             //ChocolateBoiler.GetInstance().Drain(); 
 
             //Remote Control - Command Pattern
-            RemoteControl remote = new RemoteControl();
+            //RemoteControl remote = new RemoteControl();
 
-            Light light = new Light("Kitchen");
-            Stereo stereo = new Stereo();
+            //Light light = new Light("Kitchen");
+            //Stereo stereo = new Stereo();
 
-            remote.SetCommand(0, new LightOnCommand(light), new LightOffCommand(light));
-            remote.SetCommand(1, new StereoOnCommand(stereo), new StereoOffCommand(stereo));
-            remote.onButtonPushed(0);
-            remote.onButtonPushed(0);
-            remote.Undo();
-            remote.Undo();
-            remote.Undo();
-            remote.Undo();
+            //remote.SetCommand(0, new LightOnCommand(light), new LightOffCommand(light));
+            //remote.SetCommand(1, new StereoOnCommand(stereo), new StereoOffCommand(stereo));
+            //remote.onButtonPushed(0);
+            //remote.onButtonPushed(0);
+            //remote.Undo();
 
-            remote.offButtonPushed(0);
+            //remote.offButtonPushed(0);
 
-            remote.onButtonPushed(1);
-            remote.onButtonPushed(1);
-            remote.Undo();
-            remote.offButtonPushed(1);
+            //remote.onButtonPushed(1);
+            //remote.onButtonPushed(1);
+            //remote.Undo();
+            //remote.offButtonPushed(1);
 
-            Console.WriteLine(remote.ToString());
-
+            //Console.WriteLine(remote.ToString());
+            IDuck adapterDuck = new TurkeyAdapter(new WildTurkey());
+            adapterDuck.Quack();
+            adapterDuck.Fly();
         }
     }
 }
