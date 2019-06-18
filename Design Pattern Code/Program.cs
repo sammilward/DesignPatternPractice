@@ -9,6 +9,8 @@ using Design_Pattern_Code.Chocolate_Factory___Singleton;
 using Design_Pattern_Code.Remote_Control___Command_Pattern;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Commands;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Devices;
+using Design_Pattern_Code.Ducks_2___Adapter_Pattern;
+using Design_Pattern_Code.Home_Cinema___Facade_Pattern;
 
 namespace Design_Pattern_Code
 {
@@ -58,11 +60,13 @@ namespace Design_Pattern_Code
             //ChocolateBoiler.GetInstance().Boil();
             //ChocolateBoiler.GetInstance().Drain(); 
 
-            ////Remote Control - Command Pattern
+
+            //Remote Control - Command Pattern
             //RemoteControl remote = new RemoteControl();
 
             //Light light = new Light("Kitchen");
             //Stereo stereo = new Stereo();
+
 
             //ICommand[] onCommands = new ICommand[2];
             //onCommands.SetValue(new LightOnCommand(light), 0);
@@ -83,6 +87,30 @@ namespace Design_Pattern_Code
             //remote.offButtonPushed(2);
             //remote.Undo();
             //Console.WriteLine(remote.ToString());
+
+            //remote.SetCommand(0, new LightOnCommand(light), new LightOffCommand(light));
+            //remote.SetCommand(1, new StereoOnCommand(stereo), new StereoOffCommand(stereo));
+            //remote.onButtonPushed(0);
+            //remote.onButtonPushed(0);
+            //remote.Undo();
+
+            //remote.offButtonPushed(0);
+
+            //remote.onButtonPushed(1);
+            //remote.onButtonPushed(1);
+            //remote.Undo();
+            //remote.offButtonPushed(1);
+
+            //Console.WriteLine(remote.ToString());
+
+            //Ducks 2 - Adapter
+            //IDuck adapterDuck = new TurkeyAdapter(new WildTurkey());
+            //adapterDuck.Quack();
+            //adapterDuck.Fly();
+
+            //Home Cinema - Facade
+            //HomeCinemaFacade homeCinema = new HomeCinemaFacade(new DvdPlayer(), new Screen(), new PopcornPopper());
+            //homeCinema.WatchFilm();
         }
     }
 }
