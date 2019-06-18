@@ -10,6 +10,7 @@ using Design_Pattern_Code.Remote_Control___Command_Pattern;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Commands;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Devices;
 using Design_Pattern_Code.Ducks_2___Adapter_Pattern;
+using Design_Pattern_Code.Home_Cinema___Facade_Pattern;
 
 namespace Design_Pattern_Code
 {
@@ -79,9 +80,15 @@ namespace Design_Pattern_Code
             //remote.offButtonPushed(1);
 
             //Console.WriteLine(remote.ToString());
-            IDuck adapterDuck = new TurkeyAdapter(new WildTurkey());
-            adapterDuck.Quack();
-            adapterDuck.Fly();
+
+            //Ducks 2 - Adapter
+            //IDuck adapterDuck = new TurkeyAdapter(new WildTurkey());
+            //adapterDuck.Quack();
+            //adapterDuck.Fly();
+
+            //Home Cinema - Facade
+            //HomeCinemaFacade homeCinema = new HomeCinemaFacade(new DvdPlayer(), new Screen(), new PopcornPopper());
+            //homeCinema.WatchFilm();
         }
     }
 }
