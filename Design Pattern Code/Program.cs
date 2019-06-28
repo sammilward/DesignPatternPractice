@@ -9,6 +9,7 @@ using Design_Pattern_Code.Chocolate_Factory___Singleton;
 using Design_Pattern_Code.Remote_Control___Command_Pattern;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Commands;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Devices;
+using Design_Pattern_Code.Beverages___Template_Method;
 
 namespace Design_Pattern_Code
 {
@@ -83,6 +84,16 @@ namespace Design_Pattern_Code
             //remote.offButtonPushed(2);
             //remote.Undo();
             //Console.WriteLine(remote.ToString());
+
+            //Beverages - Template Method
+            Tea tea = new Tea();
+            tea.PrepareRecipe();
+
+            Coffee coffee = new Coffee();
+            coffee.PrepareRecipe();
+
+            CoffeeWithHook coffeeHook = new CoffeeWithHook();
+            coffeeHook.PrepareRecipe();
         }
     }
 }
