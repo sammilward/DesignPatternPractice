@@ -9,6 +9,7 @@ using Design_Pattern_Code.Chocolate_Factory___Singleton;
 using Design_Pattern_Code.Remote_Control___Command_Pattern;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Commands;
 using Design_Pattern_Code.Remote_Control___Command_Pattern.Devices;
+using Design_Pattern_Code.Beverages___Template_Method;
 using Design_Pattern_Code.Ducks_2___Adapter_Pattern;
 using Design_Pattern_Code.Home_Cinema___Facade_Pattern;
 
@@ -111,6 +112,17 @@ namespace Design_Pattern_Code
             //Home Cinema - Facade
             //HomeCinemaFacade homeCinema = new HomeCinemaFacade(new DvdPlayer(), new Screen(), new PopcornPopper());
             //homeCinema.WatchFilm();
+  
+            //Beverages - Template Method
+            //Tea tea = new Tea();
+            //tea.PrepareRecipe();
+
+            //Coffee coffee = new Coffee();
+            //coffee.PrepareRecipe();
+
+            //CoffeeWithHook coffeeHook = new CoffeeWithHook();
+            //coffeeHook.PrepareRecipe();
+
         }
     }
 }
