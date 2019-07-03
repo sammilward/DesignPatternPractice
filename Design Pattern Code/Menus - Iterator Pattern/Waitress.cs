@@ -1,38 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Design_Pattern_Code.Menus___Iterator_Pattern
 {
     public class Waitress
     {
-        PancakeHouseMenu PancakeMenu;
-        DinerMenu DinerMenu;
+        MenuComponent allMenus;
 
-        public Waitress(PancakeHouseMenu pancakeMenu, DinerMenu dinerMenu)
+
+        public Waitress(MenuComponent menus)
         {
-            PancakeMenu = pancakeMenu;
-            DinerMenu = dinerMenu;
+            allMenus = menus;
         }
 
         public void PrintMenu()
         {
-            IIterator pancakeIterator = PancakeMenu.CreateIterator();
-            IIterator dinerIterator = DinerMenu.CreateIterator();
-            Console.WriteLine("Menu\n-----\nBreakfast\n");
-            PrintMenu(pancakeIterator);
-            Console.WriteLine("\nLunch\n");
-            PrintMenu(dinerIterator);
+             allMenus.Print();
         }
 
-        public void PrintMenu(IIterator iterator)
+        public void PrintVegatarianMenu()
         {
+            IIterator iterator = allMenus.CreateIterator();
+            System.Console.WriteLine("Vegatarian Menu\n-----------\n");
             while(iterator.HasNext())
             {
-                MenuItem item = (MenuItem)iterator.Next();
-                Console.WriteLine(item.Name + ", ");
-                Console.WriteLine(item.Price+ " -- ");
-                Console.WriteLine(item.Description);
+                MenuComponent menuComponent = (MenuComponent)iterator.Next();
+                try
+                {
+                    if (menuComponent.IsVegatarian())
+                    {
+                        menuComponent.Print();
+                    }
+                }
+                catch (InvalidOperationException e)
+                {
+
+                }
             }
         }
     }

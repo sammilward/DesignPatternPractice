@@ -13,6 +13,7 @@ using Design_Pattern_Code.Beverages___Template_Method;
 using Design_Pattern_Code.Ducks_2___Adapter_Pattern;
 using Design_Pattern_Code.Home_Cinema___Facade_Pattern;
 using Design_Pattern_Code.Menus___Iterator_Pattern;
+using System.Collections.Generic;
 
 namespace Design_Pattern_Code
 {
@@ -126,10 +127,35 @@ namespace Design_Pattern_Code
 
 
             //Menus - Iterator Pattern
-            PancakeHouseMenu panMenu = new PancakeHouseMenu();
-            DinerMenu dinerMenu = new DinerMenu();
+            MenuComponent pancakeHouseMenu = new Menu("Pancake House Menu", "Breakfast");
+            MenuComponent dinerMenu = new Menu("Diner Menu", "Lunch");
+            MenuComponent cafeMenu = new Menu("Cafe Menu", "Dinner");
+            MenuComponent dessertMenu = new Menu("Dessert Menu", "Dessert");
 
-            Waitress waitress = new Waitress(panMenu, dinerMenu);
+            MenuComponent allMenus = new Menu("All Menus", "All Menus Combined");
+            allMenus.Add(pancakeHouseMenu);
+            allMenus.Add(dinerMenu);
+            allMenus.Add(cafeMenu);
+
+            pancakeHouseMenu.Add(new MenuItem("Pancake house Item 1", "Desciption of pancake house Item 1", false, 2.99));
+            pancakeHouseMenu.Add(new MenuItem("Pancake house Item 2", "Desciption of pancake house Item 2", false, 3.99));
+            pancakeHouseMenu.Add(new MenuItem("Pancake house Item 3", "Desciption of pancake house Item 3", true, 4.99));
+
+            dinerMenu.Add(new MenuItem("Dinner Item 1", "Desciption of Diner Item 1", true, 4.99));
+            dinerMenu.Add(new MenuItem("Dinner Item 2", "Desciption of Diner Item 2", false, 5.99));
+            dinerMenu.Add(new MenuItem("Dinner Item 3", "Desciption of Diner Item 3", false, 6.49));
+
+            cafeMenu.Add(new MenuItem("Cafe Item 1", "Desciption of cafe Item 1", true, 1.99));
+            cafeMenu.Add(new MenuItem("Cafe Item 2", "Desciption of cafe Item 2", false, 2.99));
+            cafeMenu.Add(new MenuItem("Cafe Item 3", "Desciption of cafe Item 3", false, 2.49));
+
+            dessertMenu.Add(new MenuItem("Desert Item 1", "Desciption of desert 1", true, 3.49));
+            dessertMenu.Add(new MenuItem("Desert Item 2", "Desciption of desert 2", true, 4.49));
+            dessertMenu.Add(new MenuItem("Desert Item 3", "Desciption of desert 3", true, 5.00));
+
+            dinerMenu.Add(dessertMenu);
+
+            Waitress waitress = new Waitress(allMenus);
 
             waitress.PrintMenu();
         }

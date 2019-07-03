@@ -2,7 +2,7 @@
 
 namespace Design_Pattern_Code.Menus___Iterator_Pattern
 {
-    public class PancakeHouseMenu
+    public class PancakeHouseMenu : IMenu
     {
         private List<MenuItem> menuItems = new List<MenuItem>();
 

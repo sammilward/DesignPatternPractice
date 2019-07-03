@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Design_Pattern_Code.Menus___Iterator_Pattern
 {
-    public class DinerMenu
+    public class DinerMenu : IMenu
     {
         const int MAX_ITEMS = 6;
         int numberOfItems = 0;
